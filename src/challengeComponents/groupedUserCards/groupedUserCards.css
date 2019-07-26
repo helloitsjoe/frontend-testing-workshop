@@ -1,0 +1,10 @@
+.GroupedUserCards {
+  display: grid;
+  grid-gap: 8px;
+}
+
+@media screen and (min-width: 960px) {
+  .GroupedUserCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}

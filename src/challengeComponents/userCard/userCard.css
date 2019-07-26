@@ -1,0 +1,8 @@
+.UserCard-names {
+  text-transform: capitalize;
+}
+
+.UserCard-property {
+  font-weight: 900;
+  display: inline-block;
+}

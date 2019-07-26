@@ -1,0 +1,50 @@
+.Button {
+  background-color: #01768b;
+  color: white;
+  transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50%;
+}
+
+.Button--fullWidth {
+  width: 100%;
+}
+
+.Button:hover {
+  background-color: #34a9be;
+}
+
+.Button--disabled {
+  cursor: not-allowed;
+  background-color: #a6a6a6;
+  opacity: 0.6;
+}
+
+.Button--disabled:focus {
+  outline: 0;
+}
+
+.Button--disabled:hover {
+  background-color: #a6a6a6;
+  opacity: 0.6;
+}
+
+.Button--text {
+  background-color: inherit;
+  border: none;
+  color: #01768b;
+  text-decoration: underline;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: inherit;
+}
+
+.Button--text:hover {
+  background-color: inherit;
+  color: #34a9be;
+}

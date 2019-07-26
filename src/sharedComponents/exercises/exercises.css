@@ -1,0 +1,38 @@
+.Exercises {
+  background-color: #f6f4ee;
+  padding: 24px 16px;
+}
+
+.Exercises-header {
+  border-bottom: 1px solid purple;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.Exercises-cardCriteria {
+  font-weight: 700;
+  color: #7f187f;
+  text-transform: uppercase;
+}
+
+.Exercises-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.Exercises-listItem {
+  counter-increment: my-awesome-counter;
+  padding-bottom: 8px;
+  margin-left: 8px;
+}
+
+.Exercises-listItem::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #7f187f;
+  font-weight: bold;
+}
+
+.Exercises-cardWrapper {
+  display: grid;
+  grid-gap: 24px;
+}

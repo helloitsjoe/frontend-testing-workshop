@@ -1,0 +1,10 @@
+.Card {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) box-shadow;
+}
+
+.Card--selected {
+  box-shadow: 0 0 0 3px rgba(127, 24, 127, 0.36) inset;
+}

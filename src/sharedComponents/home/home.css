@@ -1,0 +1,57 @@
+.Home {
+  padding: 24px 16px;
+}
+
+.Home-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.Home-listItem {
+  counter-increment: my-awesome-counter;
+  padding-bottom: 8px;
+}
+
+.Home-listItem::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #7f187f;
+  font-weight: bold;
+}
+
+.Home-link {
+  color: #01768b;
+}
+
+.Home-section {
+  margin-bottom: 48px;
+}
+
+.Home-challengeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Home-linkWrapper {
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.Home-cardText {
+  color: black;
+}
+
+code {
+  background: #282828;
+  color: #8ec07c;
+  padding: 2px;
+  margin: 0px 4px;
+}

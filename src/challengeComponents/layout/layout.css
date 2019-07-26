@@ -1,0 +1,30 @@
+.Layout {
+  background-color: #f6f4ee;
+  padding: 24px 16px;
+}
+
+.Layout-header {
+  border-bottom: 1px solid purple;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
+.Layout-gridWrapper {
+  display: grid;
+  grid-gap: 24px;
+}
+
+.Layout-rightRail {
+  grid-row-end: -2;
+}
+
+@media screen and (min-width: 720px) {
+  .Layout-gridWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 24px;
+  }
+  .Layout-rightRail {
+    grid-row-end: auto;
+  }
+}

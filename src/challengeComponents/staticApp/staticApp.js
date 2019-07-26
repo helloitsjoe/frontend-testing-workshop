@@ -1,0 +1,49 @@
+import React, { Component } from "react";
+import { SaveUsersAppLayout } from "../saveUsersAppLayout/saveUsersAppLayout";
+
+export class StaticApp extends Component {
+  state = {
+    savedUsers: null
+  };
+
+  saveUser = id => {
+    this.setState(prevState => ({
+      savedUsers: { ...prevState.savedUsers, [id]: this.props.data[id] }
+    }));
+  };
+
+  removeUser = id => {
+    if (!this.state.savedUsers.hasOwnProperty(id)) {
+      return;
+    }
+    this.setState(prevState => {
+      const newSavedUsers = {
+        ...prevState.savedUsers
+      };
+      delete newSavedUsers[id];
+      return {
+        savedUsers: newSavedUsers
+      };
+    });
+  };
+
+  getSavedUserIds = () => {
+    if (!this.state.savedUsers) {
+      return [];
+    }
+    return Object.keys(this.state.savedUsers);
+  };
+
+  render() {
+    return (
+      <SaveUsersAppLayout
+        headerText="Static User Interaction"
+        saveUser={this.saveUser}
+        removeUser={this.removeUser}
+        savedUserIds={this.getSavedUserIds()}
+        savedUsers={this.state.savedUsers}
+        data={this.props.data}
+      />
+    );
+  }
+}
