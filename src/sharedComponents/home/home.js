@@ -27,8 +27,11 @@ export const Home = () => (
       <ol className="Home-list">
         <li className="Home-listItem">Fork this sandbox</li>
         <li className="Home-listItem">
-          Take a ticket, and accomplish the acceptance criteria in any way you
-          see fit.
+          Take a ticket on our{" "}
+          <Button type="text" onClick={() => navigate("/exercises")}>
+            tickets page
+          </Button>{" "}
+          and accomplish the acceptance criteria in any way you see fit.
         </li>
         <li className="Home-listItem">
           If you have a testing mentor, run your solution through them as a
@@ -71,7 +74,7 @@ export const Home = () => (
         fair game to write tests for.
       </p>
       <p>
-        In every component folder, we've included a sub-directory named
+        In every component folder, I've included a sub-directory named
         <code>__tests__</code>. This is where you should place your tests. By
         convention, tests should be named after the component or function they
         are testing, followed by <code>_spec.test.js</code>. For example, when
@@ -83,10 +86,10 @@ export const Home = () => (
     <div className="Home-section">
       <SectionTitle titleText="Our Solutions" />
       <p>
-        We've provided "solution" files for the components and utility
-        functions. These solutions are not exhaustive, and represent one opinion
-        of how to write test coverage for these components and function. In
-        general, they follow a few rules:
+        I've provided "solution" files for the components and utility functions.
+        These solutions are not exhaustive, and represent one opinion of how to
+        write test coverage for these components and function. In general, they
+        follow a few rules:
       </p>
       <ol className="Home-list">
         <li className="Home-listItem">
@@ -119,7 +122,7 @@ export const Home = () => (
       <p>
         Check out our{" "}
         <Button type="text" onClick={() => navigate("/exercises")}>
-          exercises page
+          tickets page
         </Button>{" "}
         to get started.
       </p>

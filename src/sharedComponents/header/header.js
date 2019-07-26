@@ -28,7 +28,7 @@ export const Header = () => (
         <Link to="/">Home</Link>
       </li>
       <li className="Header-link">
-        <Link to="/exercises">Exercises</Link>
+        <Link to="/exercises">Tickets</Link>
       </li>
       <li className="Header-link">
         <Link to="/staticApp">Static App</Link>
