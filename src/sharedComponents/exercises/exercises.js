@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { Card } from '../../challengeComponents/card/card';
-import { SectionTitle } from '../../challengeComponents/sectionTitle/sectionTitle';
-import { Button } from '../../challengeComponents/button/button';
-import { navigate } from '@reach/router';
-import Highlight from 'react-highlight';
-import './exercises.css';
+import React, { useEffect } from "react";
+import { Card } from "../../challengeComponents/card/card";
+import { SectionTitle } from "../../challengeComponents/sectionTitle/sectionTitle";
+import { Button } from "../../challengeComponents/button/button";
+import { navigate } from "@reach/router";
+import Highlight from "react-highlight";
+import "./exercises.css";
 
 export const Exercises = () => {
   useEffect(() => {
@@ -26,16 +26,16 @@ export const Exercises = () => {
             headingLevel={2}
           />
           <p className="Exercises-cardCriteria">Link</p>
-          <Button type="text" onClick={() => navigate('/exerciseOne')}>
+          <Button type="text" onClick={() => navigate("/exerciseOne")}>
             Save Users App (hydrated with props)
           </Button>
           <p className="Exercises-cardCriteria">Goal</p>
           <p>
-            React gives us the power to build and compose small, modular
-            elements into larger pieces. Covering these core components with
-            tests has an outsized impact because they are re-used so often.
-            Let's build an understanding of component testing by writing tests
-            for our most basic elements.
+            React gives us the power to build and compose small, modular elements
+            into larger pieces. Covering these core components with tests has an
+            outsized impact because they are re-used so often. Let's build an
+            understanding of component testing by writing tests for our most
+            basic elements.
           </p>
           <p className="Exercises-cardCriteria">Acceptance Criteria:</p>
           <p>
@@ -110,7 +110,7 @@ test("renders title text", () => {
             headingLevel={2}
           />
           <p className="Exercises-cardCriteria">Link</p>
-          <Button type="text" onClick={() => navigate('/exerciseOne')}>
+          <Button type="text" onClick={() => navigate("/exerciseOne")}>
             Save Users App (hydrated with props)
           </Button>
           <p className="Exercises-cardCriteria">Goal</p>
@@ -156,7 +156,7 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
             headingLevel={2}
           />
           <p className="Exercises-cardCriteria">Link</p>
-          <Button type="text" onClick={() => navigate('/exerciseOne')}>
+          <Button type="text" onClick={() => navigate("/exerciseOne")}>
             Save Users App (hydrated with props)
           </Button>
           <p className="Exercises-cardCriteria">Goal</p>
@@ -190,14 +190,14 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
           <p className="Exercises-cardCriteria">Implementation Details:</p>
           There's a saying in frontend testing - "Don't test internals". This is
           another way of saying not to test component internals. The excellent
-          Kent C. Dodds wrote an excellent article{' '}
+          Kent C. Dodds wrote an excellent article{" "}
           <a
             href="https://kentcdodds.com/blog/testing-implementation-details"
             target="_blank"
             rel="noopener noreferrer"
           >
             here
-          </a>{' '}
+          </a>{" "}
           that dives deep into that concept. Please read this article before you
           work on this larger scale integration-like test.
           <p />
@@ -217,7 +217,7 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
             headingLevel={2}
           />
           <p className="Exercises-cardCriteria">Link</p>
-          <Button type="text" onClick={() => navigate('/exerciseTwo')}>
+          <Button type="text" onClick={() => navigate("/exerciseTwo")}>
             Save Users App (hydrated with a fetch call)
           </Button>
           <p className="Exercises-cardCriteria">Goal</p>
@@ -264,28 +264,28 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
               the AsyncApp component. This gives us the power to test AsyncApp
               with a mock version of fetchUsers that we can control. You will
               need to leverage this, and Jest mocks to write a successful test
-              the first part of this exercise. More info on jest mocks{' '}
+              the first part of this exercise. More info on jest mocks{" "}
               <a
                 href="https://jestjs.io/docs/en/mock-function-api.html#mockfnmockresolvedvaluevalue"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 here
-              </a>{' '}
+              </a>{" "}
             </li>
             <li className="Exercises-listItem">
               Wait-for-expect: We've provided this library to help you test
               AsyncApp's data fetching component. Because this component relies
               on async actions to fetch data, we need a way to wait for the
               promise to resolve before we can make any assertions. This library
-              helps us do that in a controlled way. More info{' '}
+              helps us do that in a controlled way. More info{" "}
               <a
                 href="https://github.com/TheBrainFamily/wait-for-expect"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 here
-              </a>{' '}
+              </a>{" "}
             </li>
             <li className="Exercises-listItem">
               Multiple exports: If you look at the AsyncApp exports, you will
@@ -305,7 +305,7 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
             headingLevel={2}
           />
           <p className="Exercises-cardCriteria">Link</p>
-          <Button type="text" onClick={() => navigate('/exerciseTwo')}>
+          <Button type="text" onClick={() => navigate("/exerciseTwo")}>
             Save Users App (hydrated with a fetch call)
           </Button>
           <p className="Exercises-cardCriteria">Goal</p>
