@@ -182,7 +182,7 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
               Test that clicking the "X" button on a SavedUsersList user item
               removes that user from the SavedUsersList.
             </li>
-            <li>
+            <li className="Exercises-listItem">
               Test that GroupedUserCards recieves the savedUserIds prop with the
               right saved user ids once you have a saved user.
             </li>
