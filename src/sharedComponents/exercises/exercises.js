@@ -260,7 +260,6 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
           <ul className="Exercises-list">
             <li className="Exercises-listItem">
               Dependency Injection: We've passed in our fetch call as a prop to
-              >Dependency Injection: We've passed in our fetch call as a prop to
               the AsyncApp component. This gives us the power to test AsyncApp
               with a mock version of fetchUsers that we can control. You will
               need to leverage this, and Jest mocks to write a successful test
