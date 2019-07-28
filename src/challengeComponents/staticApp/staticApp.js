@@ -1,7 +1,17 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import { SaveUsersAppLayout } from "../saveUsersAppLayout/saveUsersAppLayout";
 
 export class StaticApp extends Component {
+
+  static propTypes = {
+    data: PropTypes.object
+  }
+
+  static defaultProps = {
+    data: {}
+  }
+
   state = {
     savedUsers: null
   };
