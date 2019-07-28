@@ -188,8 +188,8 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
             </li>
           </ul>
           <p className="Exercises-cardCriteria">Implementation Details:</p>
-          There's a saying in frontend testing - "Don't test internals". This is
-          another way of saying not to test component internals. The excellent
+          There's a saying in testing - "Don't test internals". This is another
+          way of saying not to test component internals. The excellent
           Kent C. Dodds wrote an excellent article{" "}
           <a
             href="https://kentcdodds.com/blog/testing-implementation-details"
