@@ -163,7 +163,7 @@ import {formattedUserData, mockUserData} from '../../utilities/mockUserData'
           <p>
             We have testing coverage for all of our pieces. Now it's time to put
             it all together and write something closer to an integration test.
-            This exercise will require you to mount the app, perform simulated
+            This exercise will require you to mount StaticApp, perform simulated
             exercises, and assert the proper user interfaces updated in the
             proper way.
           </p>
